@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>新闻列表1</title>
+
+<style type="text/css">
+   body{
+	background-color:#009;
+	}
+       *{
+		margin:0px;
+		 padding:0px;
+	 }
+	  #all{
+		  width:750px;
+		  height:800px;
+		  margin:0 auto;
+		  background-image:url(images/Bj_header.gif);
+		  background-position:top;
+		  background-repeat:no-repeat;
+		  }
+		  #content{
+			  background-color:#fff;
+			  width:750px;
+			  height:650px;
+			  }
+      #top{
+		   width:750px;
+		   height:100px;
+		  }
+	   #left{
+		   float:left;
+		   width:30%;
+		   height:600;
+		   background-color:#FFF;
+		   margin-top:10px;
+		   }
+		   #right{
+			     float:right;
+				 width:70%;
+				 height:600px;
+			   }
+			  /*左侧列表*/
+			#leftlist{
+				background-image:url(images/Bj_li.gif);
+				margin-top:10px;
+				background-repeat:no-repeat;
+				margin-left:10px;
+				list-style-type:none;
+				}
+                 li{
+                     list-style-type:none;
+                       }
+	#bar{
+		background-image:url(images/Bj_h3.gif);
+		background-repeat:no-repeat;
+		margin-top:10px;
+                height:25px;
+			}
+		#date{
+		      float:right;
+		     color:#6CC;
+		     font-size:12px;
+                      padding-right:10px;
+				}
+  #bottom{
+	  width:750px;
+	  height:70px;
+	  background-color:#fff;
+	  }
+	  p{
+		  text-align:center;
+		  padding-top:10px;
+		  font-size:12px;
+		  }
+   	#text{
+		    float:right;
+		    padding-right:50px;
+			height:37px;
+			margin-top:60px;
+		
+			}
+</style>
+ <script type="text/javascript">
+
+    function search(){
+      var title=document.getElementById("content1").value;
+      if(title=="热点新闻")
+		{window.open("search2.html");}
+			 else if(title=="新闻头条")
+	 {window.open("search1.html");}
+			else
+			alert("不存在该页面，请重新查找！！！")
+		 }
+    </script>
+</head>
+
+<body>
+
+   <!--最外层div-->
+  <div id="all">
+        <!--头部logo-->
+        <div id="top">
+	    <div style="float:left"><img src="images/Pic_logo.gif" style="padding-top:20px; padding-left:10px;"></div>
+         <div id="text">
+             <form>
+             <input id="content1">
+             <input type="button" name="search_button" value="搜索" style="background:url(images/Pic_serchBtn.gif);" onclick="search()">
+             </form>
+         </div>
+       </div>
+        <div id="content">
+        <br/>
+            <div id="left">
+               <h3>&nbsp;&nbsp;新闻类别</h3>
+                 <ul>
+                  <li id="leftlist">体育类别</li>
+                  <li id="leftlist">科技类别</li>
+                  <li id="leftlist">生活类别</li>
+                  <li id="leftlist">政治类别</li>
+                  <li id="leftlist">经济类别</li>
+               </ul>
+           </div>
+           <br/>
+           <div id="right">
+              <div id="bar"><h4>新闻头条</h4></div><br>
+               <!--第一个无序列表-->
+              <ul>
+                <li><span><font color="#55FFCC" size="-1">体育类别</font>&nbsp;<a href="content1.html" target="_blank">韦德：不排除到中国打球 为了孩子放弃文身</a></span> <span id="date">2013-07-03</span></li>
+                <li><font color="#55FFCC" size="-1">体育类别</font>&nbsp;<a href="#">JR-史密斯四年2470万美元留守尼克斯</a> </span> <span id="date">2013-07-03</span></li>
+                <li><font color="#55FFCC" size="-1">体育类别</font>&nbsp;<a href="#">斯杯广州站开战在即 扬纳基斯提出三希望</a> </span> <span id="date">2013-07-03</span></li>
+                <li><font color="#55FFCC" size="-1">体育类别</font>&nbsp;<a href="#">吉诺比利续约马刺两年 GDP组合下赛季重装上阵</a></span> <span id="date">2013-07-03</span></li>
+                <li><font color="#55FFCC" size="-1">体育类别</font>&nbsp;<a href="#">NBA俱乐部争抢球员光靠高薪可不行</a></span> <span id="date">2013-07-03</span></li>
+                <li><font color="#55FFCC" size="-1">体育类别</font>&nbsp;<a href="#">帕克或将在职业生涯末期来中国打球</a></span> <span id="date">2013-07-03</span></li>
+                <li><font color="#55FFCC" size="-1">政治类别</font>&nbsp;<a href="#">周强谈司法公信</a></span> <span id="date">2013-07-03</span></li>
+                <li><font color="#55FFCC" size="-1">政治类别</font>&nbsp;<a href="#">专家谈督导组组长人选:老干部清楚哪易出事</a></span> <span id="date">2013-07-03</span></li>
+                <li><font color="#55FFCC" size="-1">政治类别</font>&nbsp;<a href="#">吉林德惠大火追踪:11名公职人员被立案侦查</a></span> <span id="date">2013-07-03</span></li>
+                 <li><font color="#55FFCC" size="-1">政治类别</font>&nbsp;<a href="#">四川一镇人大主席为儿办102桌婚庆宴被责令辞职</a></span> <span id="date">2013-07-03</span></li>
+                  <li><span><font color="#55FFCC" size="-1">体育类别</font>&nbsp;<a href="#">马刺两年600万美元将签贝利内里</a></span> <span id="date">2013-07-03</span></li>
+                <li><font color="#55FFCC" size="-1">体育类别</font>&nbsp;<a href="#">JR-史密斯四年2470万美元留守尼克斯</a> </span> <span id="date">2013-07-03</span></li>
+                <li><font color="#55FFCC" size="-1">体育类别</font>&nbsp;<a href="#">斯杯广州站开战在即 扬纳基斯提出三希望</a> </span> <span id="date">2013-07-03</span></li>
+                <li><font color="#55FFCC" size="-1">体育类别</font>&nbsp;<a href="#">吉诺比利续约马刺两年 GDP组合下赛季重装上阵</a></span> <span id="date">2013-07-03</span></li>
+                <li><font color="#55FFCC" size="-1">体育类别</font>&nbsp;<a href="#">NBA俱乐部争抢球员光靠高薪可不行</a></span> <span id="date">2013-07-03</span></li>
+                <li><font color="#55FFCC" size="-1">体育类别</font>&nbsp;<a href="#">帕克或将在职业生涯末期来中国打球</a></span> <span id="date">2013-07-03</span></li>
+                <li><font color="#55FFCC" size="-1">政治类别</font>&nbsp;<a href="#">周强谈司法公信</a></span> <span id="date">2013-07-03</span></li>
+                <li><font color="#55FFCC" size="-1">政治类别</font>&nbsp;<a href="#">专家谈督导组组长人选:老干部清楚哪易出事</a></span> <span id="date">2013-07-03</span></li>
+                <li><font color="#55FFCC" size="-1">政治类别</font>&nbsp;<a href="#">吉林德惠大火追踪:11名公职人员被立案侦查</a></span> <span id="date">2013-07-03</span></li>
+                 <li><font color="#55FFCC" size="-1">政治类别</font>&nbsp;<a href="#">四川一镇人大主席为儿办102桌婚庆宴被责令辞职</a></span> <span id="date">2013-07-03</span></li>
+                  <li><span><font color="#55FFCC" size="-1">体育类别</font>&nbsp;<a href="#">马刺两年600万美元将签贝利内里</a></span> <span id="date">2013-07-03</span></li>
+                <li><font color="#55FFCC" size="-1">体育类别</font>&nbsp;<a href="#">JR-史密斯四年2470万美元留守尼克斯</a> </span> <span id="date">2013-07-03</span></li>
+                <li><font color="#55FFCC" size="-1">体育类别</font>&nbsp;<a href="#">斯杯广州站开战在即 扬纳基斯提出三希望</a> </span> <span id="date">2013-07-03</span></li>
+                <li><font color="#55FFCC" size="-1">体育类别</font>&nbsp;<a href="#">吉诺比利续约马刺两年 GDP组合下赛季重装上阵</a></span> <span id="date">2013-07-03</span></li>
+                <li><font color="#55FFCC" size="-1">体育类别</font>&nbsp;<a href="#">NBA俱乐部争抢球员光靠高薪可不行</a></span> <span id="date">2013-07-03</span></li>
+                <li><font color="#55FFCC" size="-1">体育类别</font>&nbsp;<a href="#">帕克或将在职业生涯末期来中国打球</a></span> <span id="date">2013-07-03</span></li>
+             
+              </ul><br/>
+               共有200条记录 
+           </div>
+  
+         </div>
+        <!--底部的div,声明版权等信息-->
+         <div id="bottom"><hr/><p>版权所有&copy;山东理工大学计算机学院XXX</p><p>2013-7-6</p></div>
+  </div>
+  
+</body>
+</html>

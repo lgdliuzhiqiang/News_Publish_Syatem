@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>添加类别</title>
+ <style type="text/css">
+    #top{
+		   height:26px;
+		   margin-top:40px;
+		   margin-left:20px;
+        }
+	  *{
+		margin:0px;
+		padding:0px;
+	     }
+		#text{
+			width:750px;
+			margin-top:30px;
+			margin:0 auto;
+			background-color:#0C9;
+			padding-left:10%;
+			}
+	   td{
+	       padding-left:180px;
+		   padding-bottom:0;
+		}
+		 
+		 .tb{
+			 margin-top:40px;
+			 margin:0 auto;
+			 padding:0;
+			 }
+    /*底部按钮*/
+	  #bt{
+		  width:400px;
+		  margin:0 auto;
+		 
+		  }	
+		
+	</style>
+</head>
+
+<body>
+    <script type="text/javascript" src="javascript/addclass.js">
+		
+		</script>
+  <div id="top">
+       <img src="images/Pic_title_icon.gif">
+        新闻类别
+        <hr>
+   </div>
+    <div id="text">
+       
+            <form>
+            类别名称
+             <input size="40" type="text" id="title" class="tb">
+       
+            </form>
+	   
+   </table>
+    </div>
+       <div id="bt">
+       <form>
+          <input type="button" name="add" value="添加">
+          <input type="reset" name="reset" value="重置" onclick="Reset()">
+          <input type="button" name="cancel" value="取消" onclick="Cancel()">
+       </form>
+       </div>
+</body>
+</html>

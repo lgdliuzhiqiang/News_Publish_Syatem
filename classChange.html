@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>类别修改</title>
+<style type="text/css">
+   @import url(style/classchange.css);
+		</style>
+</head>
+
+<body>
+
+      <script type="text/javascript">
+		   function Reset(){
+			  
+			    document.getElementById("number").value="";
+				document.getElementById("title").value="";
+			   }
+		       function Cancel()
+		       {
+			     window.open("classManage.html","_self");
+			   }
+		</script>
+    <div id="top">
+       <img src="images/Pic_title_icon.gif">
+        新闻类别
+        <hr>
+   </div>
+     <table align="center" border="1"  bgcolor="#FFFF99" cellspacing="0">
+        <tr>
+            <td> 
+            <form>
+             类别编号
+              <input type="text" size="50px" id="number">
+              </form>
+            </td>
+        </tr>
+        <tr>
+        <td>
+        <form>
+             类别名称
+              <input type="text" size="50px" id="title">
+           </form>
+        </td>
+        </tr>
+     </table>
+     <div id="bt">
+       <form>
+          <input type="button" name="add" value="修改">
+          <input type="reset" name="reset" value="重置" onclick="Reset()">
+          <input type="button" name="cancel" value="取消" onclick="Cancel()">
+       </form>
+       </div>
+        
+</body>
+</html>
